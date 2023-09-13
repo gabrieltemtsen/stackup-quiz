@@ -29,6 +29,8 @@ class Quiz {
       this.nextButton = document.getElementById('next-button');
       this.loader = document.getElementById('loader');
       this.questId = document.getElementById('quest-id');
+      this.alert = document.getElementById('alert')
+      this.indicator = document.getElementById('indicator')
 
       this.questions = [];
       this.currentQuestionIndex = 0;
@@ -116,10 +118,25 @@ class Quiz {
       }
     
       displayQuizResult() {
+        this.indicator.textContent = 'Result'
+        if(this.score / this.questions.length == 1) {
+          this.alert.classList.remove('visually-hidden')
+          
+
+        }
+        
+        setTimeout(() => {
+          this.alert.classList.add('hidden')
+
+            
+
+        }, 2000)
         this.questionTextElement.textContent = 'Quiz complete! Your score: ' + this.score + '/' + this.questions.length;
         this.answerButtons.forEach(button => button.classList.add('hidden'));
         this.nextButton.classList.remove('hidden');
         this.nextButton.textContent = 'Restart Quiz';
+        
+        
       }
     
       restartQuiz() {
