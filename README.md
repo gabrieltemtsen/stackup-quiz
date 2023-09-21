@@ -15,7 +15,7 @@ A simple quiz app built with HTML, CSS, JavaScript and Bootstrap. This quiz test
 * If you don't know the answer to a question, skip it and come back to it later.
 * You can review your answers at any time by clicking the "Review Answers" button.
 
-## Classes, switch statements, and try-catch-finally statements
+## Classes, switch statements, and try-catch statements
 This quiz app uses the following classes, switch statements, and try-catch-finally statements:
 * Classes: The Quiz class is used to represent the quiz itself. It contains properties for the current question, the user's score, and the list of questions. It also has methods for displaying the current question, checking the user's answer, and displaying the quiz results.
 * Switch statements: The Quiz class uses a switch statement to check the user's answer to the current question. If the user's answer is correct, the score is incremented. Otherwise, the user is notified that their answer is incorrect.
